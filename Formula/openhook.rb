@@ -5,21 +5,21 @@
 class Openhook < Formula
   desc "Event routing and channels for AI agents"
   homepage "https://openhook.dev"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/openhook-dev/openhook-cli/releases/download/v0.3.0/openhook_0.3.0_darwin_amd64.tar.gz"
-      sha256 "0c41b2715582afe18983e8f2ed6fd37b9a9fb919b36e01d770aa8017b954acba"
+      url "https://github.com/openhook-dev/openhook-cli/releases/download/v0.3.1/openhook_0.3.1_darwin_amd64.tar.gz"
+      sha256 "063d6c3b3db1cbec7068dcb0e9ac46653c2a9b1af7aaacb401c05f29d279b658"
 
       define_method(:install) do
         bin.install "openhook"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/openhook-dev/openhook-cli/releases/download/v0.3.0/openhook_0.3.0_darwin_arm64.tar.gz"
-      sha256 "f619d53d671cdcc1a1b7690c7f6c970bf9b2b35f464a172c5c40a7c63ead925f"
+      url "https://github.com/openhook-dev/openhook-cli/releases/download/v0.3.1/openhook_0.3.1_darwin_arm64.tar.gz"
+      sha256 "af7c50ea5a2a76fc5a217bd6b1e7ff15b58ec0aa769438d3b9bd635fb21e3b24"
 
       define_method(:install) do
         bin.install "openhook"
@@ -29,15 +29,15 @@ class Openhook < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/openhook-dev/openhook-cli/releases/download/v0.3.0/openhook_0.3.0_linux_amd64.tar.gz"
-      sha256 "199fb80c669afd596e747471dc4bebfd1f683465a858d02f3d107b64d41d0629"
+      url "https://github.com/openhook-dev/openhook-cli/releases/download/v0.3.1/openhook_0.3.1_linux_amd64.tar.gz"
+      sha256 "0181c7d1325fb1aa67553a3d2551825571db600ee4ec6e103331f6b2ca5c7c6b"
       define_method(:install) do
         bin.install "openhook"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/openhook-dev/openhook-cli/releases/download/v0.3.0/openhook_0.3.0_linux_arm64.tar.gz"
-      sha256 "0ca9827a911cf0001e5a6a6476bc0b62af49e27b959cc9a3256f9694c53ed4da"
+      url "https://github.com/openhook-dev/openhook-cli/releases/download/v0.3.1/openhook_0.3.1_linux_arm64.tar.gz"
+      sha256 "6ade40ae4882647e37f09508674516aefc56d527d1eeb45517fe2b9c95f4afa3"
       define_method(:install) do
         bin.install "openhook"
       end
